@@ -21,6 +21,11 @@ h1{
     transform: translate(-10%, -50%);
     font-size: 90px;
     z-index: 1;
+    font-weight: 800;
+    color: transparent;
+    background-image: url(https://media.giphy.com/media/xT1XGZndeDLlWvSDaU/giphy.gif);
+    background-position: center;
+    -webkit-background-clip: text;
 }
 .logo{
     position:absolute;
@@ -33,7 +38,63 @@ h1{
     width: 100px;
     height: 100px;
     opacity: 0.8;
+
 }
+
+.svg1{
+    position: absolute;
+    top: 20%;
+    left: 35%;
+}
+
+
+#capa_1{
+    width: 300px;
+    height: 300px;
+    margin: 10% auto;
+    display: block;
+}
+
+.face, .desktop{
+    fill-opacity: 0;
+    stroke: #F0EAD6;
+    stroke-width: 3px;
+    stroke-dashoffset: 0;
+    stroke-dasharray: 2000;
+}
+
+.desktop{
+    animation: desktop 6s ease-in-out;
+}
+
+@keyframes desktop{
+    0%{
+        stroke-dashoffset: 2000;
+    }
+
+    100%{
+        stroke-dashoffset: 0;
+    }
+}
+
+.face{
+    animation: face 12s ease-in-out;
+}
+
+@keyframes face{
+    0%{
+        stroke-dashoffset: 2000;
+    }
+    50%{
+        stroke-dashoffset: 2000;
+    }
+
+    100%{
+        stroke-dashoffset: 0;
+    }
+}
+
+
 
 ul li{
     position: absolute;
