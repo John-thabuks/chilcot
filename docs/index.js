@@ -116,4 +116,15 @@ document.addEventListener("DOMContentLoaded", ()=>{
         displayCartItems();
     }
 
+    // Buy button click event
+    document.querySelector(".btn-buy").addEventListener("click", () => {
+        if (cartItems.length > 0) {
+            alert("Your order is placed!");
+            cartItems = [];
+            displayCartItems();
+        } else {
+            alert("Please add items to your cart before buying.");
+        }
+    });
+
 })
