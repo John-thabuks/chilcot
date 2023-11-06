@@ -8,4 +8,32 @@ document.addEventListener("DOMContentLoaded", ()=>{
     const cartContent = document.querySelector(".cart-content");
 
     let cartItems = [];
+
+    fetch(`${baseURL}/goods`)
+        .then((response) => response.json())
+        .then((data) => {
+            data.forEach((item) => {
+                const productBox = document.createElement("div");
+                productBox.classList.add("product-box");
+
+                productBox.innerHTML = `
+                    <img src="${item.image}" class="product-img" />
+                    <h2 class="product-title">${item.title}</h2>
+                    <span class="price">${item.price}</span>
+                    <i class="bx bxs-shopping-bag add-cart"></i>
+                `;
+
+                // Add an event listener for the "Add to Cart" button
+                const addButton = productBox.querySelector(".add-cart");
+                addButton.addEventListener("click", () => {
+                    addToCart(item);
+                });
+
+                shopItems.appendChild(productBox);
+            });
+        })
+        .catch((error) => console.error("Error fetching data: " + error));
+
+
+
 })
