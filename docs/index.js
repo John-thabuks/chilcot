@@ -93,4 +93,16 @@ document.addEventListener("DOMContentLoaded", ()=>{
         }
     }
 
+    // Update the total price
+    function updateTotal() {
+        let total = 0;
+
+        cartItems.forEach((item) => {
+            total += parseFloat(item.price.replace("$", '')) * item.quantity;
+        });
+
+        const totalPrice = document.querySelector(".total-price");
+        totalPrice.textContent = `$${total.toFixed(2)}`;
+    }
+
 })
