@@ -1,3 +1,45 @@
 {
-    "goods": []
+    "goods": [
+        {
+            "image": "images/product/product1.jpg",
+            "title": "CHILCOT SHIRT",
+            "price": "$25"
+        },
+        {
+            "image": "images/product/product2.jpg",
+            "title": "WIRELESS EARBUDS",
+            "price": "$100"
+        },
+        {
+            "image": "images/product/product3.jpg",
+            "title": "HOODED PARKA",
+            "price": "$45"
+        },
+        {
+            "image": "images/product/product4.jpg",
+            "title": "METAL SUNGLASSES",
+            "price": "$50"
+        },
+        {
+            "image": "images/product/product5.jpg",
+            "title": "METAL SUNGLASSES",
+            "price": "$50"
+        },
+        {
+            "image": "images/product/product6.jpg",
+            "title": "BACK HAT",
+            "price": "$50"
+        },
+        
+        {
+            "image": "images/product/product6.jpg",
+            "title": "BACK HAT",
+            "price": "$50"
+        },
+        {
+            "image": "images/product/product8.jpg",
+            "title": "ULTRABOOST 22",
+            "price": "$45"
+        }
+    ]
 }
