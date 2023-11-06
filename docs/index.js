@@ -34,6 +34,14 @@ document.addEventListener("DOMContentLoaded", ()=>{
         })
         .catch((error) => console.error("Error fetching data: " + error));
 
+    // Cart icon click event
+    cartIcon.addEventListener("click", () => {
+        cart.classList.add("active");
+        displayCartItems();
+    });
 
+    closeCart.addEventListener("click", () => {
+        cart.classList.remove("active");
+    });
 
 })
