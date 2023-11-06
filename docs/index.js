@@ -44,4 +44,11 @@ document.addEventListener("DOMContentLoaded", ()=>{
         cart.classList.remove("active");
     });
 
+    // Add item to cart
+    function addToCart(item) {
+        cartItems.push(item);
+        item.quantity = 1; // Set initial quantity to 1
+        displayCartItems();
+    }
+
 })
