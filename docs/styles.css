@@ -16,3 +16,16 @@
     --text-color: #171427;
     --bg-color: #fff;
 }
+
+img{
+    width: 100%;
+}
+
+body{
+    color: var(--text-color);
+}
+.container{
+    max-width: 1068px;
+    margin: auto;
+    width: 100%;
+}
