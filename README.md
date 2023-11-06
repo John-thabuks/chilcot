@@ -5,6 +5,23 @@
 
 Chilcot Products is a simple e-commerce website that allows users to browse and purchase various products. This README.md provides an overview of the project's structure and functionality.
 
+## The Problem and Solution 
+
+#### Problem Statement:
+
+Our existing website falls short in several key areas:
+    1. Informativeness: It lacks the necessary information and content required to educate potential clients about our firm, our expertise, and our unique value proposition.
+    2. Credibility: A professionally designed and maintained website is a primary touchpoint for establishing trust with potential clients. Our current site does not inspire confidence.
+
+#### Solution:
+
+To address these challenge, I propose the development of a one-page company website that will serve as our digital storefront. This new website will be designed to convey the core aspects of our firm effectively. 
+
+#### Minimum Viable Product
+1. Develop a visually appealing, responsive, and professional landing page with a clean layout.
+2. Include a concise description of the firm's core services and value proposition.
+3. Display contact details prominently for easy inquiries.
+
 
 ## Table of Contents
 
