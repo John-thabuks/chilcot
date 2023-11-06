@@ -70,4 +70,5 @@ I'm a full stack developer...
 If you have any questions or feedback, please feel free to contact the developer:
 
 Name: John Muthabuku
+
 Email: john@example.com
