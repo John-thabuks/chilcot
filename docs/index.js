@@ -105,4 +105,15 @@ document.addEventListener("DOMContentLoaded", ()=>{
         totalPrice.textContent = `$${total.toFixed(2)}`;
     }
 
+    // Update quantity and recalculate the total
+    function updateQuantity(item, newQuantity) {
+        item.quantity = parseInt(newQuantity);
+
+        if (item.quantity < 1) {
+            item.quantity = 1;
+        }
+
+        displayCartItems();
+    }
+
 })
