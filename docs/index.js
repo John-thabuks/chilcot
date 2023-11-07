@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     let cartItems = [];
 
-    fetch(`${baseURL}/goods`)
+    fetch(`${baseURL}`)
         .then((response) => response.json())
         .then((data) => {
             data.forEach((item) => {
