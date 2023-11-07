@@ -1,6 +1,8 @@
+const baseURL = "https://John-thabuks.github.io/chilcot/db.json";
+
 document.addEventListener("DOMContentLoaded", () => {
 
-    const baseURL = "http://localhost:3000";
+    
     const shopItems = document.getElementById("shop-items");
     const cartIcon = document.querySelector("#cart-icon");
     const cart = document.querySelector(".cart");
@@ -129,54 +131,55 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
     const contactButton = document.getElementById("contact-button");
-const contactForm = document.getElementById("contact-form");
+    const contactForm = document.getElementById("contact-form");
 
-contactButton.addEventListener("click", () => {
-    contactForm.style.display = "block";
-});
-
-// Update this event listener to send a POST request when the form is submitted
-const form = document.getElementById("contact-form").querySelector("form");
-form.addEventListener("submit", (e) => {
-    e.preventDefault(); // Prevent form submission for this example
-
-    // Get form input values
-    const name = document.getElementById("name").value;
-    const email = document.getElementById("email").value;
-    const message = document.getElementById("message").value;
-
-    // Create an object with the form data
-    const formData = {
-        name,
-        email,
-        message
-    };
-
-    // Send a POST request to your server (replace with your actual endpoint)
-    fetch(`${baseURL}/user`, {
-        method: "POST",
-        headers: {
-            "Content-Type": "application/json"
-        },
-        body: JSON.stringify(formData)
-    })
-    .then((response) => response.json())
-    .then((data) => {
-        // Handle the response if needed
-        console.log("Form submitted successfully:", data);
-
-        // Clear the form
-        form.reset();
-
-        // Hide the form
-        contactForm.style.display = "none";
-    })
-    .catch((error) => {
-        console.error("Error submitting the form:", error);
-        // You can display an error message to the user if needed
+    contactButton.addEventListener("click", () => {
+        contactForm.style.display = "block";
     });
-});
+
+    // Update this event listener to send a POST request when the form is submitted
+    const form = document.getElementById("contact-form").querySelector("form");
+    form.addEventListener("submit", (e) => {
+        e.preventDefault(); // Prevent form submission for this example
+
+        // Get form input values
+        const name = document.getElementById("name").value;
+        const email = document.getElementById("email").value;
+        const message = document.getElementById("message").value;
+
+        // Create an object with the form data
+        const formData = {
+            name,
+            email,
+            message
+        };
+
+        // Send a POST request to your server (replace with your actual endpoint)
+        fetch(`${baseURL}/user`, {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(formData)
+        })
+            .then((response) => response.json())
+            .then((data) => {
+                // Handle the response if needed
+                console.log("Form submitted successfully:", data);
+
+                // Clear the form
+                form.reset();
+
+                // Hide the form
+                contactForm.style.display = "none";
+            })
+            .catch((error) => {
+                console.error("Error submitting the form:", error);
+                // You can display an error message to the user if needed
+            });
+    });
 
 
+    console.log(baseURL)
 
 })
