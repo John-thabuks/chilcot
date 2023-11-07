@@ -1,4 +1,4 @@
-const baseURL = "https://john-thabuks.github.io/chilcot/db.json";
+const baseURL = "https://my-json-server.typicode.com/John-thabuks/chilcot";
 
 document.addEventListener("DOMContentLoaded", () => {
 
