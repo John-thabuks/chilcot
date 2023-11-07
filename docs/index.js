@@ -1,4 +1,4 @@
-const baseURL = "https://John-thabuks.github.io/chilcot/db.json";
+const baseURL = "https://john-thabuks.github.io/chilcot/db.json";
 
 document.addEventListener("DOMContentLoaded", () => {
 
@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     let cartItems = [];
 
-    fetch(`${baseURL}`)
+    fetch(`${baseURL}/goods`)
         .then((response) => response.json())
         .then((data) => {
             data.forEach((item) => {
